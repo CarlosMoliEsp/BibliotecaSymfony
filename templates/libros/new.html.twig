@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Libros{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Create new Libros</h1>
+
+    {{ include('libros/_form.html.twig') }}
+    <br />
+    <a href="{{ path('app_libros_index') }}">back to list</a>
+</div>
+{% endblock %}
